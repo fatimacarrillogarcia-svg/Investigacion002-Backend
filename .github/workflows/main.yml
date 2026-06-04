@@ -29,10 +29,19 @@ jobs:
       - name: Test with .NET
         run: dotnet test
 
+      - name: Normalize WebDeploy server URL
+        id: normalize_webdeploy
+        shell: pwsh
+        run: |
+          $server = "${{ secrets.SERVER_COMPUTER_NAME }}".Trim()
+          $server = $server -replace '/?msdeploy\.axd(\?site=.*)?$', ''
+          $server = $server.TrimEnd('/')
+          "server-computer-name=$server" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+
       - name: Deploy to MonsterASP.NET via WebDeploy
         uses: rasmusbuchholdt/simply-web-deploy@2.1.0
         with:
           website-name: ${{ secrets.WEBSITE_NAME }}
-          server-computer-name: ${{ secrets.SERVER_COMPUTER_NAME }}
+          server-computer-name: ${{ steps.normalize_webdeploy.outputs.server-computer-name }}
           server-username: ${{ secrets.SERVER_USERNAME }}
           server-password: ${{ secrets.SERVER_PASSWORD }}
