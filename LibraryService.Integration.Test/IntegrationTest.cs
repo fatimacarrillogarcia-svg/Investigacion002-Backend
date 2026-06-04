@@ -43,6 +43,10 @@ namespace LibraryService.Tests
                     services.RemoveAll(typeof(DbContextOptions<LibraryContext>));
                     services.AddDbContext<LibraryContext>(options =>
                         options.UseSqlite(_connection).EnableSensitiveDataLogging());
+                    // Remove Swagger/Swashbuckle registrations added by the app to avoid
+                    // duplicate SwaggerDoc key errors during tests.
+                    services.RemoveAll(typeof(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions));
+                    services.RemoveAll(typeof(Swashbuckle.AspNetCore.SwaggerGen.ISwaggerProvider));
                 })
             );
 
