@@ -36,24 +36,25 @@ namespace LibraryService.Tests
             _connection = new Microsoft.Data.Sqlite.SqliteConnection("DataSource=:memory:");
             _connection.Open();
 
-            Client = _factory.WithWebHostBuilder(builder =>
+            var customizedFactory = _factory.WithWebHostBuilder(builder =>
                 builder.UseStartup<Startup>()
                 .ConfigureServices(services =>
                 {
                     services.RemoveAll(typeof(DbContextOptions<LibraryContext>));
                     services.AddDbContext<LibraryContext>(options =>
                         options.UseSqlite(_connection).EnableSensitiveDataLogging());
-
-                    // Build a temporary provider to create the schema and keep it for tests
-                    var sp = services.BuildServiceProvider();
-                    _testServiceProvider = sp;
-                    using (var scope = sp.CreateScope())
-                    {
-                        var ctx = scope.ServiceProvider.GetRequiredService<LibraryContext>();
-                        ctx.Database.EnsureCreated();
-                    }
                 })
-            ).CreateClient();
+            );
+
+            Client = customizedFactory.CreateClient();
+            _testServiceProvider = customizedFactory.Services;
+
+            // Ensure DB schema is created using the test service provider
+            using (var scope = _testServiceProvider.CreateScope())
+            {
+                var ctx = scope.ServiceProvider.GetRequiredService<LibraryContext>();
+                ctx.Database.EnsureCreated();
+            }
         }
 
         private async Task SeedLibrary()

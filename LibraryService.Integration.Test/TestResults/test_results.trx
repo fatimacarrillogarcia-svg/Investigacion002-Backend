@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b651fa88-9411-45ad-a831-c1ac27739a32" name="Jose Santos@ADMIN 2026-06-04 17:16:15" runUser="Admin\Jose Santos" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-06-04T17:16:15.0816468-06:00" queuing="2026-06-04T17:16:15.0816479-06:00" start="2026-06-04T17:16:07.6502940-06:00" finish="2026-06-04T17:16:15.3869902-06:00" />
+  <TestSettings name="default" id="038aade8-2b59-46bb-8bcf-a3604c3e0a42">
+    <Deployment runDeploymentRoot="Jose_Santos_ADMIN_2026-06-04_17_16_15" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="8e54caa2-e50c-4664-a0a5-3f034565f0bf" testId="fc8b8c2c-30ba-196f-ccbc-588927d68778" testName="LibraryService.Tests.IntegrationTests.TestDeleteLibrary" computerName="ADMIN" duration="00:00:02.4929991" startTime="2026-06-04T17:16:15.0257811-06:00" endTime="2026-06-04T17:16:15.0258036-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e54caa2-e50c-4664-a0a5-3f034565f0bf">
+      <Output>
+        <ErrorInfo>
+          <Message>Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response0.StatusCode to be 201, but found InternalServerError.&#xD;
+
+With configuration:
+- Use declared types and members&#xD;
+- Compare enums by value&#xD;
+- Match member by name (or throw)&#xD;
+- Without automatic conversion.&#xD;
+- Be strict about the order of items in byte arrays&#xD;
+</Message>
+          <StackTrace>   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+   at LibraryService.Tests.IntegrationTests.TestDeleteLibrary() in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs:line 149&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bea098d4-3a05-4ea4-8770-be0f07588ce5" testId="f4b1258d-8057-d553-fed6-ac495100e759" testName="LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound" computerName="ADMIN" duration="00:00:00.0918844" startTime="2026-06-04T17:16:15.1116029-06:00" endTime="2026-06-04T17:16:15.1116036-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bea098d4-3a05-4ea4-8770-be0f07588ce5">
+      <Output>
+        <ErrorInfo>
+          <Message>Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 200, but found InternalServerError.&#xD;
+
+With configuration:
+- Use declared types and members&#xD;
+- Compare enums by value&#xD;
+- Match member by name (or throw)&#xD;
+- Without automatic conversion.&#xD;
+- Be strict about the order of items in byte arrays&#xD;
+</Message>
+          <StackTrace>   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+   at LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound() in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs:line 121&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6f98335f-d150-4fb1-9716-1bd3067ec7b3" testId="3cd96014-b7aa-5291-f6f1-e7e784dd2e3d" testName="LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound" computerName="ADMIN" duration="00:00:00.1106249" startTime="2026-06-04T17:16:15.2233108-06:00" endTime="2026-06-04T17:16:15.2233112-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f98335f-d150-4fb1-9716-1bd3067ec7b3">
+      <Output>
+        <ErrorInfo>
+          <Message>Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 201, but found InternalServerError.&#xD;
+
+With configuration:
+- Use declared types and members&#xD;
+- Compare enums by value&#xD;
+- Match member by name (or throw)&#xD;
+- Without automatic conversion.&#xD;
+- Be strict about the order of items in byte arrays&#xD;
+</Message>
+          <StackTrace>   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+   at LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound() in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs:line 97&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound" storage="c:\users\jose santos\desktop\prograivalex\i2bf\investigacion002-backend\libraryservice.integration.test\bin\debug\net6.0\libraryservice.integration.test.dll" id="3cd96014-b7aa-5291-f6f1-e7e784dd2e3d">
+      <Execution id="6f98335f-d150-4fb1-9716-1bd3067ec7b3" />
+      <TestMethod codeBase="C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\bin\Debug\net6.0\LibraryService.Integration.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LibraryService.Tests.IntegrationTests" name="TestAddBook_Ok_GetBook_NotFound" />
+    </UnitTest>
+    <UnitTest name="LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound" storage="c:\users\jose santos\desktop\prograivalex\i2bf\investigacion002-backend\libraryservice.integration.test\bin\debug\net6.0\libraryservice.integration.test.dll" id="f4b1258d-8057-d553-fed6-ac495100e759">
+      <Execution id="bea098d4-3a05-4ea4-8770-be0f07588ce5" />
+      <TestMethod codeBase="C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\bin\Debug\net6.0\LibraryService.Integration.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LibraryService.Tests.IntegrationTests" name="TestGetBooks_Ok_NotFound" />
+    </UnitTest>
+    <UnitTest name="LibraryService.Tests.IntegrationTests.TestDeleteLibrary" storage="c:\users\jose santos\desktop\prograivalex\i2bf\investigacion002-backend\libraryservice.integration.test\bin\debug\net6.0\libraryservice.integration.test.dll" id="fc8b8c2c-30ba-196f-ccbc-588927d68778">
+      <Execution id="8e54caa2-e50c-4664-a0a5-3f034565f0bf" />
+      <TestMethod codeBase="C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\bin\Debug\net6.0\LibraryService.Integration.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LibraryService.Tests.IntegrationTests" name="TestDeleteLibrary" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="fc8b8c2c-30ba-196f-ccbc-588927d68778" executionId="8e54caa2-e50c-4664-a0a5-3f034565f0bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4b1258d-8057-d553-fed6-ac495100e759" executionId="bea098d4-3a05-4ea4-8770-be0f07588ce5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3cd96014-b7aa-5291-f6f1-e7e784dd2e3d" executionId="6f98335f-d150-4fb1-9716-1bd3067ec7b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados sin formato de lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="0" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.2+2d84eb3141 (64-bit .NET 6.0.36)&#xD;
+[xUnit.net 00:00:03.84]   Discovering: LibraryService.Integration.Test&#xD;
+[xUnit.net 00:00:03.92]   Discovered:  LibraryService.Integration.Test&#xD;
+[xUnit.net 00:00:03.93]   Starting:    LibraryService.Integration.Test&#xD;
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
+      An unhandled exception has occurred while executing the request.&#xD;
+      System.ArgumentException: An item with the same key has already been added. Key: v1&#xD;
+         at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)&#xD;
+         at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)&#xD;
+         at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.SwaggerDoc(SwaggerGenOptions swaggerGenOptions, String name, OpenApiInfo info)&#xD;
+         at LibraryService.WebAPI.Startup.&lt;&gt;c.&lt;ConfigureServices&gt;b__4_1(SwaggerGenOptions c) in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\HackerRank1\Startup.cs:line 36&#xD;
+         at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)&#xD;
+         at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)&#xD;
+         at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()&#xD;
+         at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)&#xD;
+         at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1&amp; arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)&#xD;
+         at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)&#xD;
+         at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)&#xD;
+         at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.&lt;&gt;c.&lt;AddSwaggerGen&gt;b__0_1(IServiceProvider s)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.&lt;&gt;c__DisplayClass2_0.&lt;RealizeService&gt;b__0(ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
+         at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)&#xD;
+         at lambda_method38(Closure , Object , HttpContext , IServiceProvider )&#xD;
+         at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__DisplayClass5_1.&lt;UseMiddleware&gt;b__2(HttpContext context)&#xD;
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)&#xD;
+[xUnit.net 00:00:06.59]       Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response0.StatusCode to be 201, but found InternalServerError.&#xD;
+[xUnit.net 00:00:06.59]       
+With configuration:
+- Use declared types and members&#xD;
+[xUnit.net 00:00:06.59]       - Compare enums by value&#xD;
+[xUnit.net 00:00:06.59]       - Match member by name (or throw)&#xD;
+[xUnit.net 00:00:06.59]       - Without automatic conversion.&#xD;
+[xUnit.net 00:00:06.59]       - Be strict about the order of items in byte arrays&#xD;
+[xUnit.net 00:00:06.60]       &#xD;
+[xUnit.net 00:00:06.60]       Stack Trace:&#xD;
+[xUnit.net 00:00:06.60]            at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:06.60]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:06.60]            at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+[xUnit.net 00:00:06.60]            at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+[xUnit.net 00:00:06.60]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.60]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.60]         C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs(149,0): at LibraryService.Tests.IntegrationTests.TestDeleteLibrary()&#xD;
+[xUnit.net 00:00:06.60]         --- End of stack trace from previous location ---&#xD;
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
+      An unhandled exception has occurred while executing the request.&#xD;
+      System.ArgumentException: An item with the same key has already been added. Key: v1&#xD;
+         at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)&#xD;
+         at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)&#xD;
+         at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.SwaggerDoc(SwaggerGenOptions swaggerGenOptions, String name, OpenApiInfo info)&#xD;
+         at LibraryService.WebAPI.Startup.&lt;&gt;c.&lt;ConfigureServices&gt;b__4_1(SwaggerGenOptions c) in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\HackerRank1\Startup.cs:line 36&#xD;
+         at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)&#xD;
+         at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)&#xD;
+         at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()&#xD;
+         at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)&#xD;
+         at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1&amp; arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)&#xD;
+         at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)&#xD;
+         at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)&#xD;
+         at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.&lt;&gt;c.&lt;AddSwaggerGen&gt;b__0_1(IServiceProvider s)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.&lt;&gt;c__DisplayClass2_0.&lt;RealizeService&gt;b__0(ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
+         at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)&#xD;
+         at lambda_method93(Closure , Object , HttpContext , IServiceProvider )&#xD;
+         at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__DisplayClass5_1.&lt;UseMiddleware&gt;b__2(HttpContext context)&#xD;
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)&#xD;
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
+      An unhandled exception has occurred while executing the request.&#xD;
+      System.ArgumentException: An item with the same key has already been added. Key: v1&#xD;
+         at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)&#xD;
+         at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)&#xD;
+         at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.SwaggerDoc(SwaggerGenOptions swaggerGenOptions, String name, OpenApiInfo info)&#xD;
+         at LibraryService.WebAPI.Startup.&lt;&gt;c.&lt;ConfigureServices&gt;b__4_1(SwaggerGenOptions c) in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\HackerRank1\Startup.cs:line 36&#xD;
+         at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)&#xD;
+         at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)&#xD;
+         at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()&#xD;
+         at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)&#xD;
+         at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1&amp; arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)&#xD;
+         at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)&#xD;
+         at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)&#xD;
+         at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.&lt;&gt;c.&lt;AddSwaggerGen&gt;b__0_1(IServiceProvider s)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.&lt;&gt;c__DisplayClass2_0.&lt;RealizeService&gt;b__0(ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
+         at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)&#xD;
+         at lambda_method93(Closure , Object , HttpContext , IServiceProvider )&#xD;
+         at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__DisplayClass5_1.&lt;UseMiddleware&gt;b__2(HttpContext context)&#xD;
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)&#xD;
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
+      An unhandled exception has occurred while executing the request.&#xD;
+      System.ArgumentException: An item with the same key has already been added. Key: v1&#xD;
+         at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)&#xD;
+         at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)&#xD;
+         at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.SwaggerDoc(SwaggerGenOptions swaggerGenOptions, String name, OpenApiInfo info)&#xD;
+         at LibraryService.WebAPI.Startup.&lt;&gt;c.&lt;ConfigureServices&gt;b__4_1(SwaggerGenOptions c) in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\HackerRank1\Startup.cs:line 36&#xD;
+         at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)&#xD;
+         at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)&#xD;
+         at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()&#xD;
+         at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)&#xD;
+         at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1&amp; arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)&#xD;
+         at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)&#xD;
+         at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)&#xD;
+         at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.&lt;&gt;c.&lt;AddSwaggerGen&gt;b__0_1(IServiceProvider s)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.&lt;&gt;c__DisplayClass2_0.&lt;RealizeService&gt;b__0(ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
+         at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)&#xD;
+         at lambda_method93(Closure , Object , HttpContext , IServiceProvider )&#xD;
+         at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__DisplayClass5_1.&lt;UseMiddleware&gt;b__2(HttpContext context)&#xD;
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)&#xD;
+[xUnit.net 00:00:06.68]       Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 200, but found InternalServerError.&#xD;
+[xUnit.net 00:00:06.68]       
+With configuration:
+- Use declared types and members&#xD;
+[xUnit.net 00:00:06.68]       - Compare enums by value&#xD;
+[xUnit.net 00:00:06.68]       - Match member by name (or throw)&#xD;
+[xUnit.net 00:00:06.69]       - Without automatic conversion.&#xD;
+[xUnit.net 00:00:06.69]       - Be strict about the order of items in byte arrays&#xD;
+[xUnit.net 00:00:06.69]       &#xD;
+[xUnit.net 00:00:06.69]       Stack Trace:&#xD;
+[xUnit.net 00:00:06.69]            at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:06.69]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:06.69]            at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+[xUnit.net 00:00:06.69]            at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+[xUnit.net 00:00:06.69]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.69]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.69]         C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs(121,0): at LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound()&#xD;
+[xUnit.net 00:00:06.69]         --- End of stack trace from previous location ---&#xD;
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
+      An unhandled exception has occurred while executing the request.&#xD;
+      System.ArgumentException: An item with the same key has already been added. Key: v1&#xD;
+         at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)&#xD;
+         at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)&#xD;
+         at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.SwaggerDoc(SwaggerGenOptions swaggerGenOptions, String name, OpenApiInfo info)&#xD;
+         at LibraryService.WebAPI.Startup.&lt;&gt;c.&lt;ConfigureServices&gt;b__4_1(SwaggerGenOptions c) in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\HackerRank1\Startup.cs:line 36&#xD;
+         at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)&#xD;
+         at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)&#xD;
+         at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()&#xD;
+         at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)&#xD;
+         at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1&amp; arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)&#xD;
+         at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)&#xD;
+         at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)&#xD;
+         at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.&lt;&gt;c.&lt;AddSwaggerGen&gt;b__0_1(IServiceProvider s)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.&lt;&gt;c__DisplayClass2_0.&lt;RealizeService&gt;b__0(ServiceProviderEngineScope scope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
+         at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
+         at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)&#xD;
+         at lambda_method94(Closure , Object , HttpContext , IServiceProvider )&#xD;
+         at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__DisplayClass5_1.&lt;UseMiddleware&gt;b__2(HttpContext context)&#xD;
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)&#xD;
+[xUnit.net 00:00:06.80]       Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 201, but found InternalServerError.&#xD;
+[xUnit.net 00:00:06.80]       
+With configuration:
+- Use declared types and members&#xD;
+[xUnit.net 00:00:06.80]       - Compare enums by value&#xD;
+[xUnit.net 00:00:06.80]       - Match member by name (or throw)&#xD;
+[xUnit.net 00:00:06.80]       - Without automatic conversion.&#xD;
+[xUnit.net 00:00:06.80]       - Be strict about the order of items in byte arrays&#xD;
+[xUnit.net 00:00:06.80]       &#xD;
+[xUnit.net 00:00:06.80]       Stack Trace:&#xD;
+[xUnit.net 00:00:06.80]            at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:06.80]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:06.80]            at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+[xUnit.net 00:00:06.80]            at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+[xUnit.net 00:00:06.80]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.80]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.80]         C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs(97,0): at LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound()&#xD;
+[xUnit.net 00:00:06.80]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:06.82]   Finished:    LibraryService.Integration.Test&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="ADMIN" outcome="Error" timestamp="2026-06-04T17:16:15.0187849-06:00">
+        <Text>[xUnit.net 00:00:06.59]     LibraryService.Tests.IntegrationTests.TestDeleteLibrary [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADMIN" outcome="Error" timestamp="2026-06-04T17:16:15.1476198-06:00">
+        <Text>[xUnit.net 00:00:06.68]     LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADMIN" outcome="Error" timestamp="2026-06-04T17:16:15.2226414-06:00">
+        <Text>[xUnit.net 00:00:06.80]     LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
