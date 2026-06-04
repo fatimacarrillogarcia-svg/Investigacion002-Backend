@@ -23,33 +23,32 @@ namespace LibraryService.Tests
     public class IntegrationTests : IClassFixture<WebApplicationFactory<Program>>
     {
         private readonly WebApplicationFactory<Program> _factory;
-        private readonly LibraryContext context;
+        private readonly System.Data.Common.DbConnection _connection;
 
         public HttpClient Client { get; private set; }
 
         public IntegrationTests(WebApplicationFactory<Program> factory)
         {
             _factory = factory;
-            context = new LibraryContext(new DbContextOptionsBuilder<LibraryContext>()
-                        .UseSqlite("DataSource=:memory:")
-                        .EnableSensitiveDataLogging()
-                        .Options);
+
+            // Use a shared in-memory Sqlite connection for the test host
+            _connection = new Microsoft.Data.Sqlite.SqliteConnection("DataSource=:memory:");
+            _connection.Open();
+
             Client = _factory.WithWebHostBuilder(builder =>
                 builder.UseStartup<Startup>()
                 .ConfigureServices(services =>
                 {
-                    services.RemoveAll(typeof(LibraryContext));
-                    services.AddSingleton(context);
+                    services.RemoveAll(typeof(DbContextOptions<LibraryContext>));
+                    services.AddDbContext<LibraryContext>(options =>
+                        options.UseSqlite(_connection).EnableSensitiveDataLogging());
 
-                    context.Database.OpenConnection();
-                    context.Database.EnsureCreated();
-
-                    context.SaveChanges();
-
-                    // Clear local context cache
-                    foreach (var entity in context.ChangeTracker.Entries().ToList())
+                    // Build a temporary provider to create the schema
+                    var sp = services.BuildServiceProvider();
+                    using (var scope = sp.CreateScope())
                     {
-                        entity.State = EntityState.Detached;
+                        var ctx = scope.ServiceProvider.GetRequiredService<LibraryContext>();
+                        ctx.Database.EnsureCreated();
                     }
                 })
             ).CreateClient();
