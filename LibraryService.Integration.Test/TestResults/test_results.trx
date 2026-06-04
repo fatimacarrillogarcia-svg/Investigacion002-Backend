@@ -1,57 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="b651fa88-9411-45ad-a831-c1ac27739a32" name="Jose Santos@ADMIN 2026-06-04 17:16:15" runUser="Admin\Jose Santos" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2026-06-04T17:16:15.0816468-06:00" queuing="2026-06-04T17:16:15.0816479-06:00" start="2026-06-04T17:16:07.6502940-06:00" finish="2026-06-04T17:16:15.3869902-06:00" />
-  <TestSettings name="default" id="038aade8-2b59-46bb-8bcf-a3604c3e0a42">
-    <Deployment runDeploymentRoot="Jose_Santos_ADMIN_2026-06-04_17_16_15" />
+<TestRun id="ab47ff22-ac86-4554-93fe-6226ee270a95" name="Jose Santos@ADMIN 2026-06-04 17:30:00" runUser="Admin\Jose Santos" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-06-04T17:30:00.4556360-06:00" queuing="2026-06-04T17:30:00.4556365-06:00" start="2026-06-04T17:29:53.3354187-06:00" finish="2026-06-04T17:30:00.6654839-06:00" />
+  <TestSettings name="default" id="9a2af07d-34af-4350-aad9-a766bc2e115a">
+    <Deployment runDeploymentRoot="Jose_Santos_ADMIN_2026-06-04_17_30_00" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="8e54caa2-e50c-4664-a0a5-3f034565f0bf" testId="fc8b8c2c-30ba-196f-ccbc-588927d68778" testName="LibraryService.Tests.IntegrationTests.TestDeleteLibrary" computerName="ADMIN" duration="00:00:02.4929991" startTime="2026-06-04T17:16:15.0257811-06:00" endTime="2026-06-04T17:16:15.0258036-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e54caa2-e50c-4664-a0a5-3f034565f0bf">
-      <Output>
-        <ErrorInfo>
-          <Message>Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response0.StatusCode to be 201, but found InternalServerError.&#xD;
-
-With configuration:
-- Use declared types and members&#xD;
-- Compare enums by value&#xD;
-- Match member by name (or throw)&#xD;
-- Without automatic conversion.&#xD;
-- Be strict about the order of items in byte arrays&#xD;
-</Message>
-          <StackTrace>   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
-   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
-   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
-   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
-   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
-   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
-   at LibraryService.Tests.IntegrationTests.TestDeleteLibrary() in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs:line 149&#xD;
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="bea098d4-3a05-4ea4-8770-be0f07588ce5" testId="f4b1258d-8057-d553-fed6-ac495100e759" testName="LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound" computerName="ADMIN" duration="00:00:00.0918844" startTime="2026-06-04T17:16:15.1116029-06:00" endTime="2026-06-04T17:16:15.1116036-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bea098d4-3a05-4ea4-8770-be0f07588ce5">
-      <Output>
-        <ErrorInfo>
-          <Message>Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 200, but found InternalServerError.&#xD;
-
-With configuration:
-- Use declared types and members&#xD;
-- Compare enums by value&#xD;
-- Match member by name (or throw)&#xD;
-- Without automatic conversion.&#xD;
-- Be strict about the order of items in byte arrays&#xD;
-</Message>
-          <StackTrace>   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
-   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
-   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
-   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
-   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
-   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
-   at LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound() in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs:line 121&#xD;
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="6f98335f-d150-4fb1-9716-1bd3067ec7b3" testId="3cd96014-b7aa-5291-f6f1-e7e784dd2e3d" testName="LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound" computerName="ADMIN" duration="00:00:00.1106249" startTime="2026-06-04T17:16:15.2233108-06:00" endTime="2026-06-04T17:16:15.2233112-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f98335f-d150-4fb1-9716-1bd3067ec7b3">
+    <UnitTestResult executionId="ca62e5bd-cd8c-4098-8865-99d9fba71036" testId="3cd96014-b7aa-5291-f6f1-e7e784dd2e3d" testName="LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound" computerName="ADMIN" duration="00:00:00.0323887" startTime="2026-06-04T17:30:00.5610001-06:00" endTime="2026-06-04T17:30:00.5610003-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca62e5bd-cd8c-4098-8865-99d9fba71036">
       <Output>
         <ErrorInfo>
           <Message>Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 201, but found InternalServerError.&#xD;
@@ -69,7 +23,53 @@ With configuration:
    at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
    at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
    at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
-   at LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound() in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs:line 97&#xD;
+   at LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound() in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs:line 116&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1da8da76-cb39-447d-922d-df79632ba706" testId="f4b1258d-8057-d553-fed6-ac495100e759" testName="LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound" computerName="ADMIN" duration="00:00:00.1292111" startTime="2026-06-04T17:30:00.5284324-06:00" endTime="2026-06-04T17:30:00.5284327-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1da8da76-cb39-447d-922d-df79632ba706">
+      <Output>
+        <ErrorInfo>
+          <Message>Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 200, but found InternalServerError.&#xD;
+
+With configuration:
+- Use declared types and members&#xD;
+- Compare enums by value&#xD;
+- Match member by name (or throw)&#xD;
+- Without automatic conversion.&#xD;
+- Be strict about the order of items in byte arrays&#xD;
+</Message>
+          <StackTrace>   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+   at LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound() in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs:line 140&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7a23226f-fba3-450f-b3e2-30eacb372b48" testId="fc8b8c2c-30ba-196f-ccbc-588927d68778" testName="LibraryService.Tests.IntegrationTests.TestDeleteLibrary" computerName="ADMIN" duration="00:00:01.8786026" startTime="2026-06-04T17:30:00.4048641-06:00" endTime="2026-06-04T17:30:00.4048903-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a23226f-fba3-450f-b3e2-30eacb372b48">
+      <Output>
+        <ErrorInfo>
+          <Message>Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response0.StatusCode to be 201, but found InternalServerError.&#xD;
+
+With configuration:
+- Use declared types and members&#xD;
+- Compare enums by value&#xD;
+- Match member by name (or throw)&#xD;
+- Without automatic conversion.&#xD;
+- Be strict about the order of items in byte arrays&#xD;
+</Message>
+          <StackTrace>   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+   at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+   at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+   at LibraryService.Tests.IntegrationTests.TestDeleteLibrary() in C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs:line 170&#xD;
 --- End of stack trace from previous location ---</StackTrace>
         </ErrorInfo>
       </Output>
@@ -77,22 +77,22 @@ With configuration:
   </Results>
   <TestDefinitions>
     <UnitTest name="LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound" storage="c:\users\jose santos\desktop\prograivalex\i2bf\investigacion002-backend\libraryservice.integration.test\bin\debug\net6.0\libraryservice.integration.test.dll" id="3cd96014-b7aa-5291-f6f1-e7e784dd2e3d">
-      <Execution id="6f98335f-d150-4fb1-9716-1bd3067ec7b3" />
+      <Execution id="ca62e5bd-cd8c-4098-8865-99d9fba71036" />
       <TestMethod codeBase="C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\bin\Debug\net6.0\LibraryService.Integration.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LibraryService.Tests.IntegrationTests" name="TestAddBook_Ok_GetBook_NotFound" />
     </UnitTest>
     <UnitTest name="LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound" storage="c:\users\jose santos\desktop\prograivalex\i2bf\investigacion002-backend\libraryservice.integration.test\bin\debug\net6.0\libraryservice.integration.test.dll" id="f4b1258d-8057-d553-fed6-ac495100e759">
-      <Execution id="bea098d4-3a05-4ea4-8770-be0f07588ce5" />
+      <Execution id="1da8da76-cb39-447d-922d-df79632ba706" />
       <TestMethod codeBase="C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\bin\Debug\net6.0\LibraryService.Integration.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LibraryService.Tests.IntegrationTests" name="TestGetBooks_Ok_NotFound" />
     </UnitTest>
     <UnitTest name="LibraryService.Tests.IntegrationTests.TestDeleteLibrary" storage="c:\users\jose santos\desktop\prograivalex\i2bf\investigacion002-backend\libraryservice.integration.test\bin\debug\net6.0\libraryservice.integration.test.dll" id="fc8b8c2c-30ba-196f-ccbc-588927d68778">
-      <Execution id="8e54caa2-e50c-4664-a0a5-3f034565f0bf" />
+      <Execution id="7a23226f-fba3-450f-b3e2-30eacb372b48" />
       <TestMethod codeBase="C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\bin\Debug\net6.0\LibraryService.Integration.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LibraryService.Tests.IntegrationTests" name="TestDeleteLibrary" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="fc8b8c2c-30ba-196f-ccbc-588927d68778" executionId="8e54caa2-e50c-4664-a0a5-3f034565f0bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="f4b1258d-8057-d553-fed6-ac495100e759" executionId="bea098d4-3a05-4ea4-8770-be0f07588ce5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="3cd96014-b7aa-5291-f6f1-e7e784dd2e3d" executionId="6f98335f-d150-4fb1-9716-1bd3067ec7b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3cd96014-b7aa-5291-f6f1-e7e784dd2e3d" executionId="ca62e5bd-cd8c-4098-8865-99d9fba71036" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4b1258d-8057-d553-fed6-ac495100e759" executionId="1da8da76-cb39-447d-922d-df79632ba706" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc8b8c2c-30ba-196f-ccbc-588927d68778" executionId="7a23226f-fba3-450f-b3e2-30eacb372b48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Resultados sin formato de lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
@@ -102,9 +102,65 @@ With configuration:
     <Counters total="3" executed="3" passed="0" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
     <Output>
       <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.2+2d84eb3141 (64-bit .NET 6.0.36)&#xD;
-[xUnit.net 00:00:03.84]   Discovering: LibraryService.Integration.Test&#xD;
-[xUnit.net 00:00:03.92]   Discovered:  LibraryService.Integration.Test&#xD;
-[xUnit.net 00:00:03.93]   Starting:    LibraryService.Integration.Test&#xD;
+[xUnit.net 00:00:04.49]   Discovering: LibraryService.Integration.Test&#xD;
+[xUnit.net 00:00:04.55]   Discovered:  LibraryService.Integration.Test&#xD;
+[xUnit.net 00:00:04.55]   Starting:    LibraryService.Integration.Test&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10400]&#xD;
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.&#xD;
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]&#xD;
+      Entity Framework Core 6.0.0 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: SensitiveDataLoggingEnabled &#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      CREATE TABLE "Libraries" (&#xD;
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_Libraries" PRIMARY KEY AUTOINCREMENT,&#xD;
+          "Name" TEXT NOT NULL,&#xD;
+          "Location" TEXT NOT NULL&#xD;
+      );&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      CREATE TABLE "Books" (&#xD;
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_Books" PRIMARY KEY AUTOINCREMENT,&#xD;
+          "Name" TEXT NOT NULL,&#xD;
+          "Category" TEXT NOT NULL,&#xD;
+          "LibraryId" INTEGER NOT NULL,&#xD;
+          CONSTRAINT "FK_Books_Libraries_LibraryId" FOREIGN KEY ("LibraryId") REFERENCES "Libraries" ("Id") ON DELETE CASCADE&#xD;
+      );&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      CREATE INDEX "IX_Books_LibraryId" ON "Books" ("LibraryId");&#xD;
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]&#xD;
+      Entity Framework Core 6.0.0 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: SensitiveDataLoggingEnabled &#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (4ms) [Parameters=[@p0='Location 1' (Nullable = false) (Size = 10), @p1='Library Name 1' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 2' (Nullable = false) (Size = 10), @p1='Library Name 2' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 3' (Nullable = false) (Size = 10), @p1='Library Name 3' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 4' (Nullable = false) (Size = 10), @p1='Library Name 4' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
 fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
       An unhandled exception has occurred while executing the request.&#xD;
       System.ArgumentException: An item with the same key has already been added. Key: v1&#xD;
@@ -149,27 +205,81 @@ fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
          at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
          at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
          at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)&#xD;
-         at lambda_method38(Closure , Object , HttpContext , IServiceProvider )&#xD;
+         at lambda_method36(Closure , Object , HttpContext , IServiceProvider )&#xD;
          at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__DisplayClass5_1.&lt;UseMiddleware&gt;b__2(HttpContext context)&#xD;
          at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)&#xD;
-[xUnit.net 00:00:06.59]       Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response0.StatusCode to be 201, but found InternalServerError.&#xD;
-[xUnit.net 00:00:06.59]       
+[xUnit.net 00:00:06.55]       Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response0.StatusCode to be 201, but found InternalServerError.&#xD;
+[xUnit.net 00:00:06.55]       
 With configuration:
 - Use declared types and members&#xD;
-[xUnit.net 00:00:06.59]       - Compare enums by value&#xD;
-[xUnit.net 00:00:06.59]       - Match member by name (or throw)&#xD;
-[xUnit.net 00:00:06.59]       - Without automatic conversion.&#xD;
-[xUnit.net 00:00:06.59]       - Be strict about the order of items in byte arrays&#xD;
-[xUnit.net 00:00:06.60]       &#xD;
-[xUnit.net 00:00:06.60]       Stack Trace:&#xD;
-[xUnit.net 00:00:06.60]            at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
-[xUnit.net 00:00:06.60]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
-[xUnit.net 00:00:06.60]            at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
-[xUnit.net 00:00:06.60]            at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
-[xUnit.net 00:00:06.60]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
-[xUnit.net 00:00:06.60]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
-[xUnit.net 00:00:06.60]         C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs(149,0): at LibraryService.Tests.IntegrationTests.TestDeleteLibrary()&#xD;
-[xUnit.net 00:00:06.60]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:06.55]       - Compare enums by value&#xD;
+[xUnit.net 00:00:06.55]       - Match member by name (or throw)&#xD;
+[xUnit.net 00:00:06.55]       - Without automatic conversion.&#xD;
+[xUnit.net 00:00:06.55]       - Be strict about the order of items in byte arrays&#xD;
+[xUnit.net 00:00:06.55]       &#xD;
+[xUnit.net 00:00:06.55]       Stack Trace:&#xD;
+[xUnit.net 00:00:06.55]            at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:06.55]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:06.55]            at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+[xUnit.net 00:00:06.55]            at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+[xUnit.net 00:00:06.55]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.55]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.55]         C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs(170,0): at LibraryService.Tests.IntegrationTests.TestDeleteLibrary()&#xD;
+[xUnit.net 00:00:06.55]         --- End of stack trace from previous location ---&#xD;
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]&#xD;
+      Entity Framework Core 6.0.0 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: SensitiveDataLoggingEnabled &#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      CREATE TABLE "Libraries" (&#xD;
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_Libraries" PRIMARY KEY AUTOINCREMENT,&#xD;
+          "Name" TEXT NOT NULL,&#xD;
+          "Location" TEXT NOT NULL&#xD;
+      );&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      CREATE TABLE "Books" (&#xD;
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_Books" PRIMARY KEY AUTOINCREMENT,&#xD;
+          "Name" TEXT NOT NULL,&#xD;
+          "Category" TEXT NOT NULL,&#xD;
+          "LibraryId" INTEGER NOT NULL,&#xD;
+          CONSTRAINT "FK_Books_Libraries_LibraryId" FOREIGN KEY ("LibraryId") REFERENCES "Libraries" ("Id") ON DELETE CASCADE&#xD;
+      );&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      CREATE INDEX "IX_Books_LibraryId" ON "Books" ("LibraryId");&#xD;
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]&#xD;
+      Entity Framework Core 6.0.0 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: SensitiveDataLoggingEnabled &#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 1' (Nullable = false) (Size = 10), @p1='Library Name 1' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 2' (Nullable = false) (Size = 10), @p1='Library Name 2' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 3' (Nullable = false) (Size = 10), @p1='Library Name 3' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 4' (Nullable = false) (Size = 10), @p1='Library Name 4' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
 fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
       An unhandled exception has occurred while executing the request.&#xD;
       System.ArgumentException: An item with the same key has already been added. Key: v1&#xD;
@@ -214,7 +324,7 @@ fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
          at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
          at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
          at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)&#xD;
-         at lambda_method93(Closure , Object , HttpContext , IServiceProvider )&#xD;
+         at lambda_method81(Closure , Object , HttpContext , IServiceProvider )&#xD;
          at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__DisplayClass5_1.&lt;UseMiddleware&gt;b__2(HttpContext context)&#xD;
          at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)&#xD;
 fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
@@ -261,7 +371,7 @@ fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
          at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
          at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
          at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)&#xD;
-         at lambda_method93(Closure , Object , HttpContext , IServiceProvider )&#xD;
+         at lambda_method81(Closure , Object , HttpContext , IServiceProvider )&#xD;
          at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__DisplayClass5_1.&lt;UseMiddleware&gt;b__2(HttpContext context)&#xD;
          at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)&#xD;
 fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
@@ -308,27 +418,81 @@ fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
          at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)&#xD;
          at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)&#xD;
          at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)&#xD;
-         at lambda_method93(Closure , Object , HttpContext , IServiceProvider )&#xD;
+         at lambda_method81(Closure , Object , HttpContext , IServiceProvider )&#xD;
          at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__DisplayClass5_1.&lt;UseMiddleware&gt;b__2(HttpContext context)&#xD;
          at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)&#xD;
-[xUnit.net 00:00:06.68]       Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 200, but found InternalServerError.&#xD;
-[xUnit.net 00:00:06.68]       
+[xUnit.net 00:00:06.67]       Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 200, but found InternalServerError.&#xD;
+[xUnit.net 00:00:06.67]       
 With configuration:
 - Use declared types and members&#xD;
-[xUnit.net 00:00:06.68]       - Compare enums by value&#xD;
-[xUnit.net 00:00:06.68]       - Match member by name (or throw)&#xD;
-[xUnit.net 00:00:06.69]       - Without automatic conversion.&#xD;
-[xUnit.net 00:00:06.69]       - Be strict about the order of items in byte arrays&#xD;
-[xUnit.net 00:00:06.69]       &#xD;
-[xUnit.net 00:00:06.69]       Stack Trace:&#xD;
-[xUnit.net 00:00:06.69]            at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
-[xUnit.net 00:00:06.69]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
-[xUnit.net 00:00:06.69]            at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
-[xUnit.net 00:00:06.69]            at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
-[xUnit.net 00:00:06.69]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
-[xUnit.net 00:00:06.69]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
-[xUnit.net 00:00:06.69]         C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs(121,0): at LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound()&#xD;
-[xUnit.net 00:00:06.69]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:06.67]       - Compare enums by value&#xD;
+[xUnit.net 00:00:06.67]       - Match member by name (or throw)&#xD;
+[xUnit.net 00:00:06.67]       - Without automatic conversion.&#xD;
+[xUnit.net 00:00:06.67]       - Be strict about the order of items in byte arrays&#xD;
+[xUnit.net 00:00:06.67]       &#xD;
+[xUnit.net 00:00:06.67]       Stack Trace:&#xD;
+[xUnit.net 00:00:06.67]            at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:06.67]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:06.67]            at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+[xUnit.net 00:00:06.67]            at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+[xUnit.net 00:00:06.67]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.67]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.67]         C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs(140,0): at LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound()&#xD;
+[xUnit.net 00:00:06.67]         --- End of stack trace from previous location ---&#xD;
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]&#xD;
+      Entity Framework Core 6.0.0 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: SensitiveDataLoggingEnabled &#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      CREATE TABLE "Libraries" (&#xD;
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_Libraries" PRIMARY KEY AUTOINCREMENT,&#xD;
+          "Name" TEXT NOT NULL,&#xD;
+          "Location" TEXT NOT NULL&#xD;
+      );&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      CREATE TABLE "Books" (&#xD;
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_Books" PRIMARY KEY AUTOINCREMENT,&#xD;
+          "Name" TEXT NOT NULL,&#xD;
+          "Category" TEXT NOT NULL,&#xD;
+          "LibraryId" INTEGER NOT NULL,&#xD;
+          CONSTRAINT "FK_Books_Libraries_LibraryId" FOREIGN KEY ("LibraryId") REFERENCES "Libraries" ("Id") ON DELETE CASCADE&#xD;
+      );&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      CREATE INDEX "IX_Books_LibraryId" ON "Books" ("LibraryId");&#xD;
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]&#xD;
+      Entity Framework Core 6.0.0 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: SensitiveDataLoggingEnabled &#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 1' (Nullable = false) (Size = 10), @p1='Library Name 1' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 2' (Nullable = false) (Size = 10), @p1='Library Name 2' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 3' (Nullable = false) (Size = 10), @p1='Library Name 3' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p0='Location 4' (Nullable = false) (Size = 10), @p1='Library Name 4' (Nullable = false) (Size = 14)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Libraries" ("Location", "Name")&#xD;
+      VALUES (@p0, @p1);&#xD;
+      SELECT "Id"&#xD;
+      FROM "Libraries"&#xD;
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();&#xD;
 fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
       An unhandled exception has occurred while executing the request.&#xD;
       System.ArgumentException: An item with the same key has already been added. Key: v1&#xD;
@@ -376,36 +540,36 @@ fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]&#xD;
          at lambda_method94(Closure , Object , HttpContext , IServiceProvider )&#xD;
          at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__DisplayClass5_1.&lt;UseMiddleware&gt;b__2(HttpContext context)&#xD;
          at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)&#xD;
-[xUnit.net 00:00:06.80]       Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 201, but found InternalServerError.&#xD;
-[xUnit.net 00:00:06.80]       
+[xUnit.net 00:00:06.71]       Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException : Expected response1.StatusCode to be 201, but found InternalServerError.&#xD;
+[xUnit.net 00:00:06.71]       
 With configuration:
 - Use declared types and members&#xD;
-[xUnit.net 00:00:06.80]       - Compare enums by value&#xD;
-[xUnit.net 00:00:06.80]       - Match member by name (or throw)&#xD;
-[xUnit.net 00:00:06.80]       - Without automatic conversion.&#xD;
-[xUnit.net 00:00:06.80]       - Be strict about the order of items in byte arrays&#xD;
-[xUnit.net 00:00:06.80]       &#xD;
-[xUnit.net 00:00:06.80]       Stack Trace:&#xD;
-[xUnit.net 00:00:06.80]            at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
-[xUnit.net 00:00:06.80]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
-[xUnit.net 00:00:06.80]            at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
-[xUnit.net 00:00:06.80]            at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
-[xUnit.net 00:00:06.80]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
-[xUnit.net 00:00:06.80]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
-[xUnit.net 00:00:06.80]         C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs(97,0): at LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound()&#xD;
-[xUnit.net 00:00:06.80]         --- End of stack trace from previous location ---&#xD;
-[xUnit.net 00:00:06.82]   Finished:    LibraryService.Integration.Test&#xD;
+[xUnit.net 00:00:06.71]       - Compare enums by value&#xD;
+[xUnit.net 00:00:06.71]       - Match member by name (or throw)&#xD;
+[xUnit.net 00:00:06.71]       - Without automatic conversion.&#xD;
+[xUnit.net 00:00:06.71]       - Be strict about the order of items in byte arrays&#xD;
+[xUnit.net 00:00:06.71]       &#xD;
+[xUnit.net 00:00:06.71]       Stack Trace:&#xD;
+[xUnit.net 00:00:06.71]            at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:06.71]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:06.71]            at FluentAssertions.Execution.CollectingAssertionStrategy.ThrowIfAny(IDictionary`2 context)&#xD;
+[xUnit.net 00:00:06.71]            at FluentAssertions.Equivalency.EquivalencyValidator.AssertEquality(EquivalencyValidationContext context)&#xD;
+[xUnit.net 00:00:06.71]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, Func`2 config, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.71]            at FluentAssertions.Primitives.ObjectAssertions.BeEquivalentTo[TExpectation](TExpectation expectation, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:06.71]         C:\Users\Jose Santos\Desktop\PrograIvAlex\I2BF\Investigacion002-Backend\LibraryService.Integration.Test\IntegrationTest.cs(116,0): at LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound()&#xD;
+[xUnit.net 00:00:06.71]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:06.72]   Finished:    LibraryService.Integration.Test&#xD;
 </StdOut>
     </Output>
     <RunInfos>
-      <RunInfo computerName="ADMIN" outcome="Error" timestamp="2026-06-04T17:16:15.0187849-06:00">
-        <Text>[xUnit.net 00:00:06.59]     LibraryService.Tests.IntegrationTests.TestDeleteLibrary [FAIL]</Text>
+      <RunInfo computerName="ADMIN" outcome="Error" timestamp="2026-06-04T17:30:00.3999661-06:00">
+        <Text>[xUnit.net 00:00:06.55]     LibraryService.Tests.IntegrationTests.TestDeleteLibrary [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="ADMIN" outcome="Error" timestamp="2026-06-04T17:16:15.1476198-06:00">
-        <Text>[xUnit.net 00:00:06.68]     LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound [FAIL]</Text>
+      <RunInfo computerName="ADMIN" outcome="Error" timestamp="2026-06-04T17:30:00.5269924-06:00">
+        <Text>[xUnit.net 00:00:06.67]     LibraryService.Tests.IntegrationTests.TestGetBooks_Ok_NotFound [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="ADMIN" outcome="Error" timestamp="2026-06-04T17:16:15.2226414-06:00">
-        <Text>[xUnit.net 00:00:06.80]     LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound [FAIL]</Text>
+      <RunInfo computerName="ADMIN" outcome="Error" timestamp="2026-06-04T17:30:00.5607383-06:00">
+        <Text>[xUnit.net 00:00:06.71]     LibraryService.Tests.IntegrationTests.TestAddBook_Ok_GetBook_NotFound [FAIL]</Text>
       </RunInfo>
     </RunInfos>
   </ResultSummary>
