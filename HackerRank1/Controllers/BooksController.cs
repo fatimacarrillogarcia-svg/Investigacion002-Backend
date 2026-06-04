@@ -41,7 +41,7 @@ namespace LibraryService.WebAPI.Controllers
             var book = new Data.Book
             {
                 Name = bookForm.Name,
-                Category = bookForm.Category,
+                Category = bookForm.Category ?? string.Empty,
                 LibraryId = libraryId
             };
 
