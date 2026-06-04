@@ -44,9 +44,18 @@ namespace LibraryService.Tests
                     services.AddDbContext<LibraryContext>(options =>
                         options.UseSqlite(_connection).EnableSensitiveDataLogging());
                     // Remove Swagger/Swashbuckle registrations added by the app to avoid
-                    // duplicate SwaggerDoc key errors during tests.
-                    services.RemoveAll(typeof(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions));
-                    services.RemoveAll(typeof(Swashbuckle.AspNetCore.SwaggerGen.ISwaggerProvider));
+                    // duplicate SwaggerDoc key errors during tests. Use string-based
+                    // matching so the test project does not need a compile-time
+                    // reference to Swashbuckle (which can be missing in CI).
+                    var swashbuckleTypes = new[] {
+                        "Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions",
+                        "Swashbuckle.AspNetCore.SwaggerGen.ISwaggerProvider"
+                    };
+                    var descriptorsToRemove = services.Where(d => d.ServiceType?.FullName != null && swashbuckleTypes.Contains(d.ServiceType.FullName)).ToList();
+                    foreach (var d in descriptorsToRemove)
+                    {
+                        services.Remove(d);
+                    }
                 })
             );
 
