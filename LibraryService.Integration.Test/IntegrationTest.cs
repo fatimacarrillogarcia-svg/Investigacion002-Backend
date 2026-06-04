@@ -24,6 +24,7 @@ namespace LibraryService.Tests
     {
         private readonly WebApplicationFactory<Program> _factory;
         private readonly System.Data.Common.DbConnection _connection;
+        private System.IServiceProvider _testServiceProvider;
 
         public HttpClient Client { get; private set; }
 
@@ -43,8 +44,9 @@ namespace LibraryService.Tests
                     services.AddDbContext<LibraryContext>(options =>
                         options.UseSqlite(_connection).EnableSensitiveDataLogging());
 
-                    // Build a temporary provider to create the schema
+                    // Build a temporary provider to create the schema and keep it for tests
                     var sp = services.BuildServiceProvider();
+                    _testServiceProvider = sp;
                     using (var scope = sp.CreateScope())
                     {
                         var ctx = scope.ServiceProvider.GetRequiredService<LibraryContext>();
@@ -64,8 +66,12 @@ namespace LibraryService.Tests
                 new Library { Name = "Library Name 4", Location = "Location 4" }
             };
 
-            await context.Libraries.AddRangeAsync(libraries);
-            await context.SaveChangesAsync();  // Save to the database
+            using (var scope = _testServiceProvider.CreateScope())
+            {
+                var ctx = scope.ServiceProvider.GetRequiredService<LibraryContext>();
+                await ctx.Libraries.AddRangeAsync(libraries);
+                await ctx.SaveChangesAsync();  // Save to the database
+            }
         }
 
         private async Task SeedBook(string bookName, int libraryId)
@@ -118,12 +124,14 @@ namespace LibraryService.Tests
 
             var response1 = await Client.GetAsync($"/api/libraries/2/books");
             response1.StatusCode.Should().BeEquivalentTo(StatusCodes.Status200OK);
-            var books = JsonConvert.DeserializeObject<IEnumerable<Book>>(response1.Content.ReadAsStringAsync().Result).ToList();
+            var content1 = await response1.Content.ReadAsStringAsync();
+            var books = JsonConvert.DeserializeObject<IEnumerable<Book>>(content1).ToList();
             books.Count.Should().Be(0);
 
             var response2 = await Client.GetAsync($"/api/libraries/1/books");
             response2.StatusCode.Should().BeEquivalentTo(StatusCodes.Status200OK);
-            var books2 = JsonConvert.DeserializeObject<IEnumerable<Book>>(response2.Content.ReadAsStringAsync().Result).ToList();
+            var content2 = await response2.Content.ReadAsStringAsync();
+            var books2 = JsonConvert.DeserializeObject<IEnumerable<Book>>(content2).ToList();
             books2.Count.Should().Be(2);
 
             var response3 = await Client.GetAsync($"/api/libraries/31232/books");
