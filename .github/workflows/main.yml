@@ -29,11 +29,27 @@ jobs:
       - name: Test with .NET
         run: dotnet test
 
+      - name: Install WebDeploy
+        shell: pwsh
+        run: |
+          $msdeploy = "C:\Program Files (x86)\IIS\Microsoft Web Deploy V3\msdeploy.exe"
+          if (-not (Test-Path $msdeploy)) {
+            throw "WebDeploy not found at $msdeploy"
+          }
+
       - name: Deploy to MonsterASP.NET via WebDeploy
-        uses: rasmusbuchholdt/simply-web-deploy@2.2.0
-        with:
-          website-name: ${{ secrets.WEBSITE_NAME }}
-          # The action appends the WebDeploy path itself, so pass host:port only.
-          server-computer-name: ${{ secrets.SERVER_COMPUTER_NAME }}:8172
-          server-username: ${{ secrets.SERVER_USERNAME }}
-          server-password: ${{ secrets.SERVER_PASSWORD }}
+        shell: pwsh
+        run: |
+          $msdeploy = "C:\Program Files (x86)\IIS\Microsoft Web Deploy V3\msdeploy.exe"
+          $sourcePath = Join-Path $env:GITHUB_WORKSPACE "publish"
+          $destinationUrl = "https://${{ secrets.SERVER_COMPUTER_NAME }}:8172/msdeploy.axd?site=${{ secrets.WEBSITE_NAME }}"
+
+          & $msdeploy `
+            -verb:sync `
+            -source:contentPath="$sourcePath" `
+            -dest:contentPath="${{ secrets.WEBSITE_NAME }}",computerName="$destinationUrl",userName="${{ secrets.SERVER_USERNAME }}",password="${{ secrets.SERVER_PASSWORD }}",authtype="Basic",includeAcls="False" `
+            -allowUntrusted `
+            -disableLink:AppPoolExtension `
+            -disableLink:ContentExtension `
+            -disableLink:CertificateExtension `
+            -verbose
