@@ -44,12 +44,15 @@ jobs:
           $sourcePath = Join-Path $env:GITHUB_WORKSPACE "publish"
           $destinationUrl = "https://${{ secrets.SERVER_COMPUTER_NAME }}:8172/msdeploy.axd?site=${{ secrets.WEBSITE_NAME }}"
 
-          & $msdeploy `
-            -verb:sync `
-            -source:contentPath="$sourcePath" `
-            -dest:contentPath="${{ secrets.WEBSITE_NAME }}",computerName="$destinationUrl",userName="${{ secrets.SERVER_USERNAME }}",password="${{ secrets.SERVER_PASSWORD }}",authtype="Basic",includeAcls="False" `
-            -allowUntrusted `
-            -disableLink:AppPoolExtension `
-            -disableLink:ContentExtension `
-            -disableLink:CertificateExtension `
-            -verbose
+          $arguments = @(
+            '-verb:sync'
+            "-source:contentPath=$sourcePath"
+            "-dest:contentPath=${{ secrets.WEBSITE_NAME }},computerName=$destinationUrl,userName=${{ secrets.SERVER_USERNAME }},password=${{ secrets.SERVER_PASSWORD }},authtype=Basic,includeAcls=False"
+            '-allowUntrusted'
+            '-disableLink:AppPoolExtension'
+            '-disableLink:ContentExtension'
+            '-disableLink:CertificateExtension'
+            '-verbose'
+          )
+
+          & $msdeploy @arguments
