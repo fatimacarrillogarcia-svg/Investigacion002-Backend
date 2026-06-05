@@ -33,7 +33,7 @@ jobs:
         uses: rasmusbuchholdt/simply-web-deploy@2.1.0
         with:
           website-name: ${{ secrets.WEBSITE_NAME }}
-          # MonsterASP requires the full WebDeploy endpoint, not just the host name.
-          server-computer-name: https://${{ secrets.SERVER_COMPUTER_NAME }}:8172/msdeploy.axd?site=${{ secrets.WEBSITE_NAME }}
+          # MonsterASP expects the WebDeploy server URL with scheme and port only.
+          server-computer-name: https://${{ secrets.SERVER_COMPUTER_NAME }}:8172
           server-username: ${{ secrets.SERVER_USERNAME }}
           server-password: ${{ secrets.SERVER_PASSWORD }}
