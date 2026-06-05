@@ -30,10 +30,10 @@ jobs:
         run: dotnet test
 
       - name: Deploy to MonsterASP.NET via WebDeploy
-        uses: rasmusbuchholdt/simply-web-deploy@2.1.0
+        uses: rasmusbuchholdt/simply-web-deploy@2.2.0
         with:
           website-name: ${{ secrets.WEBSITE_NAME }}
-          # MonsterASP expects the WebDeploy server URL with scheme and port only.
-          server-computer-name: https://${{ secrets.SERVER_COMPUTER_NAME }}:8172
+          # The action appends the WebDeploy path itself, so pass host:port only.
+          server-computer-name: ${{ secrets.SERVER_COMPUTER_NAME }}:8172
           server-username: ${{ secrets.SERVER_USERNAME }}
           server-password: ${{ secrets.SERVER_PASSWORD }}
